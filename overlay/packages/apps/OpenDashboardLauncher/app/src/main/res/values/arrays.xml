@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2015-2017 Hayai Software
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License. You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software distributed under the
+  ~ License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND
+  ~ either express or implied. See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <!--for overlays-->
+
+  <string-array name="excluded_apps_packages" translatable="false">
+        <item>com.android.email</item>
+        <item>com.android.gallery3d</item>
+        <item>com.hayaisoftware.launcher</item>
+        <item>com.android.development</item>
+        <item>com.android.providers.downloads.ui</item>
+
+        <item>com.hayaisoftware.launcher.test</item>
+        <item>com.hayaisoftware.launcher</item>
+        <item>com.android.contacts</item>
+        <item>com.android.dialer</item>
+        <item>com.android.browser</item>
+        <item>com.android.calendar</item>
+        <item>com.android.quicksearchbox</item>
+        <item>com.mgroup.sendlocation</item>
+        <item>com.mgroup.colmobilsuite</item>
+        <item>com.mgroup.gpsimulator</item>
+        <item>com.google.android.googlequicksearchbox</item>
+    </string-array>
+
+
+    <array name="home_top_left_button">
+        <!--action type-->
+        <item>open_category</item>
+        <!--label-->
+        <item>@string/home_button_music</item>
+        <!--icon-->
+        <item>@drawable/ic_nothing</item>
+        <!--background-->
+        <item>@drawable/hp_music</item>
+        <!--category data-->
+        <item>@array/category_screen_music</item>
+    </array>
+
+    <array name="home_bottom_right_button">
+        <!--action type-->
+        <item>open_category</item>
+        <!--label-->
+        <item>@string/home_button_navigation</item>
+        <!--icon-->
+        <item>@drawable/ic_nothing</item>
+        <!--background-->
+        <item>@drawable/hp_nav</item>
+        <!--category data-->
+        <item>@array/category_screen_navigation</item>
+    </array>
+
+    <array name="home_top_right_button">
+        <!--action type-->
+        <item>open_custom_app</item>
+        <!--label-->
+        <item>@string/home_button_service</item>
+        <!--icon-->
+        <item>@drawable/ic_nothing</item>
+        <!--background-->
+        <item>@drawable/hp_service</item>
+        <!--category data-->
+        <item>com.mgroup.mgstore</item>
+    </array>
+
+
+	<array name="home_bottom_left_button">
+        <!--action type-->
+        <item>open_custom_app</item>
+        <!--label-->
+        <item>@string/home_button_dialer</item>
+        <!--icon-->
+        <item>@drawable/ic_nothing</item>
+        <!--background-->
+        <item>@drawable/hp_dialer</item>
+        <!--app package-->
+        <item>org.dnaq.dialer2</item>
+    </array>
+
+<!--
+    <array name="home_bottom_left_button">
+        <item>start_service</item>
+        <item>@string/home_button_carsystem</item>
+        <item>@drawable/ic_car_system</item>
+        <item>@drawable/bg_bigbutton_bottomleft</item>
+        <item>com.mgroup.mgaa</item>
+        <item>com.mgroup.mgaa.MGAAService</item>
+        <item>request</item>
+        <item>back_to_car</item>
+    </array>
+-->
+ 	<array name="category_screen_music">
+        <!--first position is divider drawble-->
+        <item>@drawable/divider_music</item>
+        <item>@array/category_data_music_button1</item>
+        <item>@array/category_data_music_button2</item>
+        <item>@array/category_data_music_button3</item>
+        <item>@array/category_data_music_button4</item>
+        <item>@array/category_data_music_button5</item>
+        <item>@array/category_data_music_button6</item>
+        <item>@array/category_data_music_button7</item>
+        <item>@array/category_data_music_button8</item>
+        <item>@array/category_data_music_button9</item>
+	<item>@array/category_data_music_button10</item>
+	</array>
+
+    <array name="category_screen_navigation">
+        <!--first position is divider drawble-->
+        <item>@drawable/divider_nav</item>
+        <item>@array/category_data_nav_button1</item>
+        <item>@array/category_data_nav_button2</item>
+        <item>@array/category_data_nav_button3</item>
+        <item>@array/category_data_nav_button4</item>
+    </array>
+
+    <array name="category_screen_top_right">
+        <!--first position is divider drawble-->
+        <item>@drawable/divider_services</item>
+        <item>@array/category_data_service_button1</item>
+        <item>@array/category_data_service_button2</item>
+        <item>@array/category_data_service_button3</item>
+        <item>@array/category_data_service_button4</item>
+        <item>@array/category_data_service_button5</item>
+        <item>@array/category_data_service_button6</item>
+        <item>@array/category_data_service_button7</item>
+        <item>@array/category_data_service_button8</item>
+	</array>
+
+   <array name="category_data_music_button1">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>kaplandev.digital100fmplayer</item>
+        <!--icon background-->
+        <item>@drawable/app_100fm</item>
+    </array>
+ 
+ 
+    <array name="category_data_music_button2">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>com.nobexinc.hyundai_israel.rc</item>
+        <!--icon background-->
+        <item>@drawable/app_nobex</item>
+    </array>
+
+    <array name="category_data_music_button3">
+        <!--action type-->
+        <item>open_activity</item>
+        <!--label-->
+        <item>@string/action_music_a2dp</item>
+        <!--app package name-->
+        <item>com.mgroup.mgaa</item>
+        <!--icon resource-->
+        <item>@drawable/ic_nothing</item>
+        <!--icon background-->
+        <item>@drawable/app_a2dp</item>
+        <!--acitivty name-->
+        <item>com.mgroup.mgaa.MGAABluetoothMusicActivity</item>
+    </array>
+
+    <array name="category_data_music_button4">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>com.nobexinc.galatz.car.rc</item>
+        <!--icon background-->
+        <item>@drawable/app_galgalatz</item>
+    </array>
+
+    <array name="category_data_music_button5">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>kaplandev.digital91fmplayer</item>
+        <!--icon background-->
+        <item>@drawable/app_91fm</item>
+    </array>
+
+   <array name="category_data_music_button6">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>com.nobexinc.wls_1942030578.rc</item>
+        <!--icon background-->
+        <item>@drawable/app_102fm</item>
+    </array>
+
+ 
+   <array name="category_data_music_button7">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>com.cyberserve.android.reco99fm</item>
+        <!--icon background-->
+        <item>@drawable/app_99fm</item>
+    </array>
+
+
+   <array name="category_data_music_button8">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>com.radioin.colmobile</item>
+        <!--icon background-->
+        <item>@drawable/app_radioin</item>
+    </array>
+ 
+ 
+   <array name="category_data_music_button9">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>com.android.music</item>
+        <!--icon background-->
+        <item>@drawable/app_music</item>
+    </array>
+
+   <array name="category_data_music_button10">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>kaplandev.allfmplayer</item>
+        <!--icon background-->
+        <item>@drawable/app_all_fm</item>
+    </array>
+
+    
+
+    <array name="category_data_nav_button1">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>com.waze</item>
+        <!--icon background-->
+        <item>@drawable/app_waze</item>
+    </array>
+
+    <array name="category_data_nav_button2">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>air.com.cellogroup.Cellopark</item>
+        <!--icon background-->
+        <item>@drawable/app_cellopark</item>
+    </array>
+
+    <array name="category_data_nav_button3">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>com.unicell.pangoandroid</item>
+        <!--icon background-->
+        <item>@drawable/app_pango</item>
+    </array>
+
+    <array name="category_data_nav_button4">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>com.amudanan.amudanan</item>
+        <!--icon background-->
+        <item>@drawable/app_amud_anan</item>
+    </array>
+
+    <array name="category_data_service_button1">
+        <!--action type-->
+        <item>open_activity</item>
+        <!--label-->
+        <item>@string/bluetooth</item>
+        <!--app package name-->
+        <item>com.mgroup.mgaa</item>
+        <!--icon resource-->
+        <item>@drawable/ic_nothing</item>
+        <!--icon background-->
+        <item>@drawable/app_bt</item>
+        <!--acitivty name-->
+        <item>com.mgroup.mgaa.MGAABluetoothActivity</item>
+    </array>
+
+    <array name="category_data_service_button2">
+        <!--action type-->
+        <item>open_activity</item>
+        <!--label-->
+        <item>@string/action_car_garages</item>
+        <!--app package name-->
+        <item>com.mgroup.colmobilsuite</item>
+        <!--icon resource-->
+        <item>@drawable/ic_nothing</item>
+        <!--icon background-->
+        <item>@drawable/app_services</item>
+        <!--acitivty name-->
+        <item>com.mgroup.colmobilsuite.MosachimActivity</item>
+    </array>
+
+ 
+    <array name="category_data_service_button3">
+        <!--action type-->
+        <item>open_activity</item>
+        <!--label-->
+        <item>@string/action_car_showrooms</item>
+        <!--app package name-->
+        <item>com.mgroup.colmobilsuite</item>
+        <!--icon resource-->
+        <item>@drawable/ic_nothing</item>
+        <!--icon background-->
+        <item>@drawable/app_showroom</item>
+        <!--acitivty name-->
+        <item>com.mgroup.colmobilsuite.ShowRoomsActivity</item>
+    </array>
+ 
+    <array name="category_data_service_button4">
+        <!--action type-->
+        <item>open_activity</item>
+        <!--label-->
+        <item>@string/action_car_tradein</item>
+        <!--app package name-->
+        <item>com.mgroup.colmobilsuite</item>
+        <!--icon resource-->
+        <item>@drawable/ic_nothing</item>
+        <!--icon background-->
+        <item>@drawable/app_tradein</item>
+        <!--acitivty name-->
+        <item>com.mgroup.colmobilsuite.TradeInActivity</item>
+    </array>
+
+    <array name="category_data_service_button5">
+        <!--action type-->
+        <item>open_activity</item>
+        <!--label-->
+        <item>@string/action_car_book</item>
+        <!--app package name-->
+        <item>com.mgroup.colmobilsuite</item>
+        <!--icon resource-->
+        <item>@drawable/ic_nothing</item>
+        <!--icon background-->
+        <item>@drawable/app_carbook</item>
+        <!--acitivty name-->
+        <item>com.mgroup.colmobilsuite.CarManualActivity</item>
+    </array>
+
+    <array name="category_data_service_button6">
+        <!--action type-->
+        <item>open_activity</item>
+        <!--label-->
+        <item>@string/action_system_book</item>
+        <!--app package name-->
+        <item>com.mgroup.colmobilsuite</item>
+        <!--icon resource-->
+        <item>@drawable/ic_nothing</item>
+        <!--icon background-->
+        <item>@drawable/app_system_book</item>
+        <!--acitivty name-->
+        <item>com.mgroup.colmobilsuite.booklets.BookletActivity</item>
+    </array>
+   
+     <array name="category_data_service_button7">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>com.mgroup.mgstore</item>
+        <!--icon background-->
+        <item>@drawable/app_store_service</item>
+    </array>
+    
+    <array name="category_data_service_button8">
+        <!--action type-->
+        <item>open_app</item>
+        <!--app package name-->
+        <item>com.mgroup.paircode</item>
+        <!--icon background-->
+        <item>@drawable/app_paircode</item>
+    </array>
+
+</resources>

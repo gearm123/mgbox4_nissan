@@ -1,0 +1,26 @@
+ui_print("mgbox4 FOTA Test package");
+sleep(5);
+ui_print("Target: cneeds/mgbox4_nissan/mgbox4_nissan:6.0/MRA58N/1486891204:user/release-keys");
+show_progress(0.750000, 0);
+sleep(3);
+show_progress(0.050000, 5);
+ui_print("Flashing boot.img");
+package_extract_file("boot.img", "/dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name/boot");
+
+ui_print("Flashing recovery.img");
+package_extract_file("recovery.img", "/dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name/recovery");
+
+ui_print("Flashing system.img");
+package_extract_file("system_raw.img", "/dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name/system");
+
+ui_print("Flashing logo.bin");
+package_extract_file("logo.bin", "/dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name/logo");
+
+ui_print("Flashing lk.bin");
+package_extract_file("lk.bin", "/dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name/lk");
+
+
+ui_print("Done!");
+
+sleep(10);
+show_progress(0.200000, 10);

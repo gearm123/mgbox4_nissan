@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="show_virtual_keypad">true</bool>
+
+    <!-- Contacts are retrieved with Bluetooth, and are read-only. Do not allow creating contacts locally. -->
+    <bool name="no_contacts_app">true</bool>
+
+    <!-- Can't clear call log with Bluetooth -->
+    <bool name="can_clear_call_log">false</bool>
+    <bool name="enable_speed_dial">false</bool>
+    <bool name="show_calls_settings">false</bool>
+</resources>

@@ -1,0 +1,2 @@
+/dev/usb_accessory        0666   root       system
+/dev/input/*              0666   root       input

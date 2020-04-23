@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<android.support.constraint.ConstraintLayout android:id="@+id/home_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+	android:background="#000000"
+    android:paddingTop="@dimen/home_layout_padding_top"
+    tools:context="com.hayaisoftware.launcher.activities.HomeActivity">
+
+    <com.hayaisoftware.launcher.widgets.BigButton
+        android:id="@+id/home_btn_top_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@drawable/bg_bigbutton_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.hayaisoftware.launcher.widgets.BigButton
+        android:id="@+id/home_btn_top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@drawable/bg_bigbutton_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/home_logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toStartOf="@+id/home_btn_top_right"
+        app:layout_constraintStart_toEndOf="@+id/home_btn_top_left"
+	app:layout_constraintTop_toTopOf="parent"
+	app:layout_constraintBottom_toBottomOf="parent"/>
+        <!--app:layout_constraintTop_toTopOf="@+id/home_btn_top_right"/>-->
+	 <!--android:layout_marginTop="60dp"-->
+
+    <FrameLayout
+        android:id="@+id/home_widget_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@+id/home_btn_top_right"
+        app:layout_constraintStart_toEndOf="@+id/home_btn_top_left"
+        app:layout_constraintTop_toBottomOf="@+id/home_logo"/>
+
+
+    <com.hayaisoftware.launcher.widgets.BigButton
+        android:id="@+id/home_btn_bottom_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	android:focusable="true"
+	android:clickable="true"
+	android:background="@drawable/bg_bigbutton_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.hayaisoftware.launcher.widgets.BigButton
+        android:id="@+id/home_btn_bottom_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	android:focusable="true"
+	android:clickable="true"
+	android:background="@drawable/bg_bigbutton_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btn_home_allapps"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_bigbutton_selector"
+	android:focusable="true"
+        android:src="@drawable/bg_button_allapps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

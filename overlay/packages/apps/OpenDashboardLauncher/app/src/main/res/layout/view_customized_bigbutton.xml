@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Don't add anything in the merge tage-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:clickable="true">
+
+  
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_bigbutton_selector"
+	android:focusable="false"
+        android:focusableInTouchMode="false"
+	android:clickable="false"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/view_bigbutton_image"
+            android:layout_width="@dimen/bigbutton_width"
+            android:layout_height="@dimen/bigbutton_height"
+	    android:clickable="false"
+	    android:duplicateParentState="true"
+            android:padding="18dp"/>
+
+        <TextView
+            android:id="@+id/view_bigbutton_label"
+            android:layout_width="@dimen/bigbutton_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:ellipsize="none"
+	    android:maxLines="1"
+	    android:singleLine="true"
+	    android:clickable="false"
+	    android:duplicateParentState="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bigbutton_text_size"
+            android:textStyle="bold"/>
+</LinearLayout>
+</merge>

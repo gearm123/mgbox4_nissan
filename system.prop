@@ -1,0 +1,108 @@
+#
+# system.prop for generic sdk
+#
+
+rild.libpath=/system/lib/libreference-ril-atcom.so
+rild.libargs=-d /dev/ttyC0
+
+
+# MTK, Infinity, 20090720 {
+wifi.interface=wlan0
+# MTK, Infinity, 20090720 }
+
+# MTK, mtk03034, 20101210 {
+ro.mediatek.wlan.wsc=1
+# MTK, mtk03034 20101210}
+# MTK, mtk03034, 20110318 {
+ro.mediatek.wlan.p2p=1
+# MTK, mtk03034 20110318}
+
+# MTK, mtk03034, 20101213 {
+mediatek.wlan.ctia=0
+# MTK, mtk03034 20101213}
+
+
+#
+wifi.tethering.interface=ap0
+#
+
+ro.opengles.version=196608
+#ro.kernel.qemu=1
+#ro.kernel.qemu.gles=0
+
+wifi.direct.interface=p2p0
+
+# USB MTP WHQL
+ro.sys.usb.mtp.whql.enable=1
+
+# Power off opt in IPO
+sys.ipo.pwrdncap=2
+
+ro.sys.usb.storage.type=mtp,mass_storage
+
+# USB BICR function
+ro.sys.usb.bicr=yes
+
+# USB Charge only function
+ro.sys.usb.charging.only=no
+
+# audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+ro.zygote.preload.enable=0
+
+# temporary enables NAV bar (soft keys)
+qemu.hw.mainkeys=0
+
+ro.kernel.zio=38,108,105,16
+#ro.kernel.qemu=1
+#ro.kernel.qemu.gles=0
+#ro.boot.selinux=disable
+
+# Disable dirty region for Mali
+debug.hwui.render_dirty_regions=false
+
+ro.sf.lcd_density=213
+
+#Default rotation of screen (HW)
+ro.panel.orientation=90
+
+#To turn recovery 90 degrees as we use landscape only in portrait screen
+ro.recovery.lcd_rotation=90
+
+# performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_response_time=1
+
+#I'm not sure build.prop should have this kind of property, it just causes usb to restart
+sys.usb.config=mtp,adb
+
+ro.adb.secure=0
+
+service.adb.tcp.port=5555
+
+# dxh-add 2016-05-05, Q-160505-3
+# PackageName : com.sohu.inputmethod.sogou
+ro.mtk_default_ime=com.sohu.inputmethod.sogou.SogouIME
+ro.mgroup.lock_app_rotation=1
+mgroup.bt.signalsize=16
+
+ro.com.google.clientidbase=android-isafe
+ro.com.android.dataroaming=true
+ro.mgroup.overeride_end_call=true
+ro.mgroup.no_usb_control=false
+ro.mgroup.font_size=huge
+ro.mgroup.no_vibrator=true
+ro.mgroup.no_battery=true
+ro.mgroup.no_window_anim=true
+ro.mgroup.ignition_behavior=1
+ro.mgroup.hfdaemon.type=dual
+rw.mgroup.no_recsnd=true
+rw.mgroup.sf.delayms=80
+rw.mgroup.force_submix_on=1
+rw.mgroup.bluetooth_ptt=1
+rw.mgroup.car_type=generic
+rw.mgroup.current_mac=default
+ro.mgroup.device_type=car
+debug.sf.disablehwc=1

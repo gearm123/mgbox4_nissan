@@ -1,0 +1,22 @@
+key 103   DPAD_UP
+key 105   DPAD_LEFT
+key 106   DPAD_RIGHT
+key 108   DPAD_DOWN
+
+key 28    ENTER
+key 158   BACK
+key 353   DPAD_CENTER
+
+# touch screen
+
+axis 0x00 X
+axis 0x01 Y
+
+# ignition keys
+
+key 249   IGNITION
+key 61    CALL
+key 62    ENDCALL
+key 163   MEDIA_NEXT
+key 165   MEDIA_PREVIOUS
+key 582   ASSIST

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!--android:gravity="center_horizontal"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_category_above_line"
+                android:paddingRight="20dp"
+		android:paddingLeft="5dp"
+                android:paddingTop="26dp"
+                tools:context="com.hayaisoftware.launcher.activities.HomeActivity">
+
+
+    <TextView
+        android:id="@+id/appscategory_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+	android:focusable="false"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@android:color/white"
+        android:textSize="38sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/appscategory_title_underline"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+	android:focusable="false"
+        android:layout_below="@id/appscategory_title"
+        android:background="@color/gray_700"/>
+
+    <Button
+        android:id="@+id/appscategory_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@id/appscategory_title_underline"
+        android:background="@drawable/bg_bigbutton_selector"
+        android:drawableLeft="@drawable/ic_chevron_left"
+        android:text="@string/appscategory_back"
+        android:textColor="#FFFFFF"
+	android:focusable="true"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appscategory_title_underline"
+        android:background="@drawable/bg_category"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/appscategory_buttons_scroll_left"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_chevron_left"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <HorizontalScrollView
+                android:id="@+id/appscategory_horizontal_scrol"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="false">
+                <LinearLayout
+                android:id="@+id/appscategory_buttons_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"/>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/appscategory_buttons_scroll_right"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_chevron_right"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

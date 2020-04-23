@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Все права сохранены. Hayai Software, 2015-2017 гг. 
+  ~ Распространяется на условиях лицензии Apache License, версия 2.0 (далее - "Лицензия"); вы можете использовать настоящий файл исключительно в соответствии с Лицензией.Вы можете получить ее экземпляр по адресу:
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ В случае если иное не предусмотрено применимым законодательством или согласовано в письменном виде, программное обеспечение, распостраняемое на условиях Лицензии, предоставляется "КАК ЕСТЬ" БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ ИЛИ УСЛОВИЙ, как явно выраженных, так и подразумеваемых. См. соответствующие разрешения и ограничения в подходящей языковой версии Лицензии.
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="home_button_dialer">Набор номера</string>
+    <string name="home_button_carsystem">Дисплей автомобиля</string>
+    <string name="home_button_music">Музыка</string>
+    <string name="home_button_service">Сервисы</string>
+    <string name="home_button_navigation">Навигация</string>
+    <string name="appscategory_back">Назад</string>
+
+    <string name="action_music_usb">USB-медиа</string>
+    <string name="action_music_a2dp">BT Music</string>
+    
+    <string name="action_car_book">Руководство по эксплуатации автомобиля</string>
+    <string name="action_system_book">Руководство по системе</string>
+    <string name="action_car_showrooms">Автосалоны</string>
+    <string name="action_car_tradein">Программа Trade In</string>
+    <string name="action_car_garages">Сервисные центры</string>
+
+    <string name="bluetooth">Bluetooth</string>
+
+    <string name="widget_package">com.mgroup.weather</string>
+    <string name="widget_class">com.mgroup.weather.WidgetProvider</string>
+    <string name="app_shortcut_package">com.mgroup.easycontacts</string>
+
+</resources>
+

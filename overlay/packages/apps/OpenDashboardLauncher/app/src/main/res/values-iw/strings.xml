@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2015-2017 Hayai Software
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License. You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software distributed under the
+  ~ License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND
+  ~ either express or implied. See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="title_activity_home">HomeActivity</string>
+
+	<string name="home_button_dialer">חייגן</string>
+    <string name="home_button_carsystem">מסך הרכב</string>
+    <string name="home_button_music">מוזיקה</string>
+    <string name="home_button_service">חנות</string>
+    <string name="home_button_navigation">ניווט וחניה</string>
+    <string name="appscategory_back">חזור</string>
+
+	<string name="action_music_usb">כונן USB</string>
+   
+    <string name="action_car_book">ספר רכב</string>
+    <string name="action_system_book">ספר מערכת</string>
+    <string name="action_car_showrooms">אולמות תצוגה</string>
+    <string name="action_car_tradein">טרייד אין</string>
+    <string name="action_car_garages">מרכזי שירות</string>
+   
+   <string name="appmenu_launch">הפעלת אפליקציה</string>
+   <string name="appmenu_info">מידע על יישום</string>
+   <string name="appmenu_pin_to_top">העלה למעלה</string>
+   <string name="appmenu_remove_pin">הורד למטה</string>
+  
+
+</resources>
